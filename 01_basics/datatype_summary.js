@@ -29,3 +29,21 @@ const myfunction=function(){
 console.log(typeof heros );
 console.log(typeof myfunction );
 console.log(typeof id );
+
+
+//stack memory(primitive datatype) = takes the copies
+
+//heap memory (non-primitive datatype) = takes the reference (original)
+
+let useronec= {
+  Name:"Amit",
+  age : 18
+}
+
+let user2 = useronec
+
+user2.Name = "amul";
+
+console.log(useronec)
+
+
