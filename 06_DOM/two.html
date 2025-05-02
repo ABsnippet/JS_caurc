@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - CAC</title>
+</head>
+<body style="background-color: antiquewhite;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+
+</body>
+<script>
+    const p = document.querySelector('.parent');
+    // console.log(p);
+    // console.log(p.children);
+    // console.console.log(p.children[1].innerHTML);
+
+
+    for (let i = 0; i < p.children.length; i++) {
+        // console.log(p.children[i].innerHTML)
+        
+    }
+
+    // p.children[1].style.color = "red";
+    // console.log(p.firstElementChild);
+    // console.log(p.lastElementChild);
+    
+    const day1 = document.querySelector('.day')
+    // console.log(day1.innerHTML);
+    // console.log(day1.nextElementSibling);
+    // console.log(day1.parentElement);
+
+
+console.log("NODES :",p.childNodes)
+</script>
+
+</html>
