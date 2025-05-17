@@ -75,7 +75,7 @@ else{
 ```
 
 
-### proj - 3
+## proj - 3
 
 ```javascript
 const clock = document.getElementById('clock')
