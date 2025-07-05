@@ -197,3 +197,70 @@ newgamebutt.addEventListener('click',function(e){
 })
 }
 ```
+## Project 4
+
+```javascript
+const insert=document.getElementById('insert');
+
+window.addEventListener('keydown',(e)=>{
+  insert.innerHTML = `
+  <div classs="color">
+  <table>
+  <tr>
+    <th>Key</th>
+    <th>Keycode</th>
+    <th>Code</th>
+  </tr>
+  <tr>
+    <td>${e.key === " " ? "space":e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+</table>
+  </div>
+  
+  `
+})
+
+```
+
+## Project-6
+```javascript
+//generate a random color 
+
+const randomcolor = function(){
+  const hex = "0123456789ABCDEF"
+  let color = "#"
+  for(let i=0; i<6 ; i++)
+  {
+     color+=hex[Math.floor(Math.random()*16)];
+  }
+  return color;
+}
+let intervalid;
+
+const startchangecolor = function(){
+   intervalid=setInterval(changebg,2000)
+function changebg(){
+  document.body.style.backgroundColor = randomcolor();
+  
+}
+
+};
+
+
+const stopchangecolor = function(){
+  clearInterval(intervalid)
+  intervalid = null;
+}
+
+
+
+
+
+document.querySelector('#start').addEventListener('click',startchangecolor)
+
+
+document.querySelector('#stop').addEventListener('click',stopchangecolor)
+
+```
