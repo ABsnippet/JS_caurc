@@ -75,7 +75,8 @@ else{
 ```
 
 
-## proj - 3
+## Project  3
+
 
 ```javascript
 const clock = document.getElementById('clock')
@@ -87,7 +88,7 @@ setInterval(function(){
   clock.innerHTML = date.toLocaleTimeString()
 },1000)
 ````
-## proj - 4
+## Project  4
 ```javascript
 let randomnum=console.log(parseInt(Math.random()*100 + 1));
 
@@ -197,7 +198,7 @@ newgamebutt.addEventListener('click',function(e){
 })
 }
 ```
-## Project 4
+## Project 5
 
 ```javascript
 const insert=document.getElementById('insert');
